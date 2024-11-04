@@ -7,7 +7,7 @@
 
       #backgroundImage:before {
         content: "";
-        position: absolute;
+        position: fixed;
         z-index: -1;
         top: 0;
         bottom: 0;
@@ -24,7 +24,7 @@
 
       .main{
         height:500px;
-        width:500px;
+        width:90vw;
         margin:auto;
         z-index:-1;
         opacity: 1;
@@ -32,6 +32,37 @@
         font-family: sans-serif;
         text-align: left;
         padding-top: 25px;
+        font-size: 2rem;
+      }
+
+      @media only screen and (min-width: 500px) {
+          .main{ 
+            width: 80vw;
+            font-size: 1.8rem;
+           }
+      }
+
+      @media only screen and (min-width: 768px) {
+          .main{
+            width: 70wv;
+            font-size: 1.5rem;
+          }
+      }
+
+      h1{ font-size: 5.0rem;  }
+      @media only screen and (min-width: 500px) {
+        h1{ font-size: 4.0rem; }
+      }
+      @media only screen and (min-width: 768px) {
+        h1{ font-size: 3.0rem; }
+      }
+
+      h3{ font-size: 3.0rem;  }
+      @media only screen and (min-width: 500px) {
+        h3{ font-size: 2.0rem; }
+      }
+      @media only screen and (min-width: 768px) {
+        h3{ font-size: 1.8rem; }
       }
 
     </style>
@@ -44,6 +75,7 @@
         <h1>Real Estate Scam Magazine</h1>
         <h3>A Planetary Interest Magazine</h2>
         <ul>
+          <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQfR71pr0FA1jIuelXjMwKSdLT2QtX0zbPgGmTp4WvUDf9eNgFos02h33hFCcVl1oFcm3cJSt8jKbm_/pub?start=true&loop=false&delayms=5000">Volume 9</a></li>
           <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vT8zi5_w8vON2P7VzEG9ZOL-yIXsC_KL3zRs5xc_fvqAVXAjasiCAWN1uL-1GgFC3jF09qERux3Hy9F/pub?start=false&loop=false&delayms=5000">Volume 8</a></li>
           <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTWWzIhZOIvWDUgimp6ROqdDQvR4MExKlB4GEwroj7MBirCYBDnOl-hwmFBwcGa-iNKxEOmrLEaqHpZ/pub?start=true&loop=true&delayms=5000">Volume 7</a></li>
           <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vR6LGtbj345mQ8BT3O5PRTsOxlWlrHunouHow2niyNDE5BoaRUt2YCXVxda71igmozJ9jredjn6kdVP/pub?start=false&loop=true&delayms=5000">Volume 6</a></li>
@@ -54,7 +86,7 @@
           <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vT50ayQbn75MZhVM23TZ5ERIDd1DSica2VuM5n0nad_h-ea7_1L2Tp58ApL2-QeRNEA9_A7and2S2IV/pub?start=false&loop=false&delayms=5000">Volume 1</a></li>
         </ul>
         <hr>
-        <p>It's not a scam! Contribute - info@realestatescam.info</p>
+        <h3>It's not a scam! Contribute!<br>info@realestatescam.info</h3>
       </div>
     </div>
   </body>
